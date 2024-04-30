@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: #222324;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main{
+    max-width: 1500px;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+main .card{
+    max-width: 300px;
+    flex: 1 1 270px;
+    text-align: center;
+    height: 400px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 9px;
+    border: 1px solid gray;
+}
+
+main .card:hover {
+    background-color: #151717;
+    border: 2px;
+    border-style: solid;
+    border-color: aqua;
+    font-weight: bolder;
+}
+
+main .card .image{
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+main .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+}
+
+main .card .caption p{
+    font-size: 1.5em;
+}
+
+del{
+    text-decoration: line-through;
+}
+
+main .card .caption .rate{
+    display: flex;
+}
+
+main .card .caption .rate i{
+    color: gold;
+    margin-left: 2px;
+}
+
+main .card a{
+    width: 50%;
+}
+
+main .card button{
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    font-size: 15px;
+
+    background-color: black;
+    color: gray;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+main .card button:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all .5s;
+    margin: 0;
+}
+
+main .card button::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    transition: all .5s;
+}
+
+main .card button:hover::before{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid aqua;
+}
+
+main .card button:hover::after{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid aqua;
+}
+
+main .card button:hover{
+    color: aqua;
+    background-color: rgb(50, 50, 50);
+}
+
+.botao{
+    align-items: center;
+    margin-top: 15px;
+    display:inline-block;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+a:active {
+text-decoration: none;
+}
